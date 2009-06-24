@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<script type='text/javascript' src='../lib/jquery.js'></script>
+	<script type='text/javascript' src='../src/timeline.js'></script>
+	<script>
+		jQuery(document).ready(function() {
+			startDate = new Date();
+			startDate.setMonth(startDate.getMonth() - 3);
+			timeline = new Timeline("#timeline", startDate);
+			timeline.loadFromRSSFeed("http://feeds.infosthetics.com/infosthetics/");
+		});
+	</script>
+	<link rel="stylesheet" href="timeline.css" type="text/css" media="screen" charset="utf-8" />
+	<style>
+		div {
+			margin:1em;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>The following shows the feed from 
+		<a href="http://feeds.infosthetics.com/infosthetics/">http://feeds.infosthetics.com/infosthetics/</a>
+	</div>
+	<div id="timeline" style="width: 50%;"></div>
+</body>
+
+</html>
