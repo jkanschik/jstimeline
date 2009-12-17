@@ -77,9 +77,18 @@ Timeline.prototype = {
 				event = jQuery("<a>")
 					.attr("href", jQuery(this).find("link").text())
 					.html(jQuery(this).find("title").text());
-
 				timeline.createWrapper(event, (new Date(jQuery(this).find("pubDate").text())));
 			});
 		});
+	},
+	loadFromJson: function(json) {
+		for (var i in json) {
+			var element = json[i];
+			var event = jQuery("<a>")
+				.attr("href", element.url)
+				.html(element.title);
+
+			this.createWrapper(event, new Date(element.date));
+		}
 	}
 }

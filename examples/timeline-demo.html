@@ -10,6 +10,13 @@
 			startDate.setMonth(startDate.getMonth() - 3);
 			timeline = new Timeline("#timeline", startDate);
 			timeline.loadFromRSSFeed("http://feeds.infosthetics.com/infosthetics/");
+			
+			json = [{title: "Event 1", url: "url1", date: "Thu, 17 Dec 2009 22:20:43 +1100"},
+					{title: "Event 2", url: "url2", date: "Mon, 14 Dec 2009 22:20:43 +1100"}];
+			
+			timeline2 = new Timeline("#timeline_json", startDate);
+			timeline2.loadFromJson(json);
+			
 		});
 	</script>
 	<link rel="stylesheet" href="timeline.css" type="text/css" media="screen" charset="utf-8" />
@@ -25,7 +32,8 @@
 	<div>The following shows the feed from 
 		<a href="http://feeds.infosthetics.com/infosthetics/">http://feeds.infosthetics.com/infosthetics/</a>
 	</div>
-	<div id="timeline" style="width: 50%;"></div>
+	<div id="timeline" class="timeline" style="width: 50%;"></div>
+	<div id="timeline_json" class="timeline" style="width: 50%;"></div>
 </body>
 
 </html>

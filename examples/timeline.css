@@ -1,31 +1,31 @@
-#timeline {
+.timeline {
 	border-top: solid 1px #ddd; 
 	position: relative;
 }
-#timeline div {
+.timeline div {
 	margin: 0em;
 	padding: 0em;
 }
 
-#timeline .month {
+.timeline .month {
 	height: 8px; 
 	width: 1px; 
 	background-color:#ddd; 
 	position: absolute;
 }
 
-#timeline .year {
+.timeline .year {
 	height: 12px;
 	width: 1px;
 	background-color:#ddd;
 	position: absolute;
 }
 
-#timeline .event_wrapper { 
+.timeline .event_wrapper { 
 	position: absolute;
 }
 
-#timeline .event_wrapper .event_tick {
+.timeline .event_wrapper .event_tick {
 	height: 15px;
 	width: 1px; 
 	background-color:#681;
@@ -33,7 +33,7 @@
 	left: 0;
 }
 
-#timeline .event_wrapper .event_content { 
+.timeline .event_wrapper .event_content { 
 	display:none;
 	width: 1000px; 
 	position:absolute; 
@@ -44,7 +44,7 @@
 	font-size: 0.9em;
 }
 
-#timeline .event_wrapper .mouse_catcher {
+.timeline .event_wrapper .mouse_catcher {
 	z-index: 1;
 	width: 10px;
 	height: 15px;
