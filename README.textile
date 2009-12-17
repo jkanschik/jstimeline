@@ -1,0 +1,12 @@
+h1. JSTimeline
+
+JSTimeline is JQuery UI widget to show a simple timeline.
+In contrast to other timelines, this implementation has minimal visual impact on the design of your site.
+
+h2. Loading from JSON
+
+To be added...
+
+h2. Loading from RSS
+
+To be added...
