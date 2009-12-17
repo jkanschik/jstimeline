@@ -5,7 +5,7 @@ In contrast to other timelines, this implementation has minimal visual impact on
 
 h2. Example
 
-"Example":examples/timeline-demo.html
+"Example":tree/master/examples/timeline-demo.html
 
 h2. Loading from JSON
 
